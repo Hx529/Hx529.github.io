@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "tailwind:watch": "npx @tailwindcss/cli -i ./src/styles/framework/tailwindcss_input.css -o ./src/styles/framework/tailwindcss_output.css --watch"
+  },
   "devDependencies": {
     "@tailwindcss/cli": "^4.1.6",
     "tailwindcss": "^4.1.6"
