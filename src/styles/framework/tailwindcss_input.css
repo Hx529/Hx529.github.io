@@ -1,0 +1,42 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+@import "tailwindcss";
+
+@theme {
+  --font-pretendard: "Pretendard Variable", "sans-serif";
+
+  --color-premary: #3b82f6;
+  --color-secondary: #f97316;
+  --color-success: #16a34a;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+  --color-info: #2563eb;
+  --color-light: #f3f4f6;
+  --color-dark: #1f2937;
+  --color-text: #111827;
+  --color-text-secondary: #6b7280;
+  --color-text-placeholder: #9ca3af;
+  --color-border: #d1d5db;
+  --color-border-secondary: #e5e7eb;
+  --color-border-hover: #9ca3af;
+  --color-border-focus: #3b82f6;
+  --color-border-active: #2563eb;
+  --color-background: #ffffff;
+  --color-background-secondary: #f9fafb;
+  --color-background-hover: #f3f4f6;
+  --color-background-active: #e5e7eb;
+  --color-background-focus: #e2e8f0;
+  --color-background-dark: #111827;
+  --color-background-light: #f3f4f6;
+}
+
+/* 하단에 줄이 중앙에서 양쪽으로 펼쳐지는 애니메이션 */
+.expanded-weight {
+  @apply relative after:content-[''] after:absolute after:bottom-0 after:left-1/2
+  after:w-0 after:h-0.5 after:bg-black after:transition-all after:duration-300 after:-translate-x-1/2
+  hover:after:w-full hover:after:-translate-x-1/2;
+}
+
+/* 우측 상단 빨간색 알림 원 */
+.notification-dot {
+  @apply after:content-[''] after:absolute after:top-0 after:right-0 after:translate-x-2 after:-translate-y-1/2 after:w-1.5 after:h-1.5 after:bg-red-500 after:rounded-full;
+}

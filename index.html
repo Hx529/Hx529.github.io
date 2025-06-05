@@ -3,19 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <link rel="stylesheet" href="./src/styles/framework/tailwindcss_output.css"> -->
-   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./src/styles/framework/tailwindcss_output.css">
+   <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
   <link rel="icon" href="./src/assets/images/Logo_dark.svg" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="./src/assets/images/Logo_light.svg" media="(prefers-color-scheme: light)">
-  <title>Document</title>
+  <title>HXINSA</title>
 </head>
-<body>
+<body class="font-pretendard">
   <header class="w-full">
-    <h1 class="w-[1020px] h-[100px] mr-auto px-[20px]">
-      <a href="/" class="block h-full">
-        <img src="./src/assets/images/Logo_dark.svg" alt="Brand Logo" class="object-contain max-h-full">
-      </a>
-    </h1>
+    <h3 class="sr-only">Header</h3>
+    <div class="max-w-7xl h-[4.375rem] m-auto flex justify-between items-center">
+      <!-- Search -->
+      <div class="rounded-sm bg-[rgb(245,246,247)] cursor-pointer flex items-center w-2xs h-1/2 gap-2 px-3">
+        <img src="./src/assets/images/SVG/search.svg" alt="search icon">
+        <span class="text-text-placeholder">Search</span>
+      </div>
+      <!-- Logo -->
+      <h1 class="w-[6.25rem] h-full flex items-center justify-center">
+        <a href="/" class="w-full h-full">
+          <img src="./src/assets/images/Logo/hxinsa.svg" alt="Brand Logo" class="object-contain w-full h-full">
+        </a>
+      </h1>
+      <!-- User -->
+      <div>
+        <ul class="flex items-center gap-3">
+          <li>
+            <button class="cursor-pointer hover:text-primary flex items-center" title="Language">
+              <img src="./src/assets/images/SVG/globe.svg" alt="Language">
+              <p id="location">United States</p>
+            </button>
+          </li>
+          <li>
+            <a href="/wish" class="hover:text-primary" title="Wish List">
+              <img src="./src/assets/images/SVG/wish_border.svg" alt="Wish">
+            </a>
+          </li>
+          <li>
+            <a href="/shopping-bag" class="hover:text-primary relative block" title="Shopping Bag">
+              <img src="./src/assets/images/SVG/shoppingCart.svg" alt="Shopping Bag">
+              <span id="shoppingList" class="block absolute bottom-0 right-0 bg-black min-w-[1.0625rem] rounded-full text-white text-xs text-center px-1">0</span>
+            </a>
+          </li>
+          <li>
+            <a href="/" class="" title="User Profile" >
+              <img src="./src/assets/images/SVG/user.svg" alt="User Profile">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <nav class="max-w-7xl m-auto relative">
+      <h3 class="sr-only">Category</h3>
+      <ul class="flex items-center gap-10 bg-white h-12 max-w-7xl m-auto font-bold text-sm">
+        <li class="uppercase h-full flex items-center expanded-weight mr-10 relative
+            before:content-[''] before:absolute before:top-1/2 before:-right-10 before:w-[1px] before:h-1/3 before:bg-black before:-translate-1/2">
+          <a href="/" class="hover:text-primary flex items-center gap-3">
+            <img src="./src/assets/images/SVG/hamburgerMenu.svg" alt="Hamburger Menu">
+            <p>Category</p>
+          </a>
+        </li>
+        <li class="uppercase h-full flex items-center expanded-weight font-logo">
+          <a href="/promotion" class="hover:text-primary relative notification-dot">#digging seoul</a>
+        </li>
+        <li class="uppercase h-full flex items-center expanded-weight">
+          <a href="/fashion" class="hover:text">fashion</a>
+        </li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/beauty">beauty</a></li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/sale">sale</a></li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/best">best</a></li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/new">new</a></li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/brands">brands</a></li>
+        <li class="uppercase h-full flex items-center expanded-weight"><a href="/stylemap">#style map</a></li>
+      </ul>
+      <!--
+        BEAUTY
+        SALE
+        BEST
+        NEW
+        BRANDS
+        #STYLE MAP
+ -->
+    </nav>
   </header>
   <body>
   </body>
